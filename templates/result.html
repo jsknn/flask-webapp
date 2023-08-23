@@ -1,0 +1,19 @@
+<html>
+
+<h2>Title of Failed/Blocked/Queried/Retest/Skipped Testcases</h2>
+
+<body style="background-color:#a3caf1">
+
+<table border=1>
+ {% for key,value in result.items() %}
+    <tr>
+        {# This is the comment sections #}
+        <th>{{ key }}</th>
+        <th>{{ value }}</th>
+
+    </tr>  
+  {% endfor %}
+</table>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+<script type="text/javascript" src="{{ url_for('static',filename='index.js') }}">
+  
+</script>
+
+</head>
+<body>
+
+<h2>Log In To Testrail </h2>
+<p1>Enter all the details requested below to get the failed cases for a particular test run</p1>
+<form action="/result" method='post'>
+  <label for="enterurl">Enter Url:</label><br>
+  <input type="text" id="enterurl" name="enterurl" placeholder="https://testrail.xyz/"><br>
+  <label for="UserName">Enter User Name:</label><br>
+  <input type="text" id="username" name="username" placeholder="xyz@mazon.com"><br><br>
+  <label for="password ">Enter Password:</label><br>
+  <input type="password" id="password" name="password" placeholder="xyz@123"><br><br>
+  <label for="RunId">Enter Run Id:</label><br>
+  <input type="text" id="runid" name="runid" placeholder="2222"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p2>If you click the "Submit" button, the form-data will be sent to a page called "/result".</p2>
+
+</body>
+</html>
